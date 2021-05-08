@@ -1,4 +1,4 @@
-# National Flag icons for React
+# National flag icons for React
 This component will return a flag icon, depending on the iso-2 country code given as a property.  
 
 ## __Usage__
@@ -9,7 +9,7 @@ import Flag from 'national-flag-icons';
 
 const App = ()=> {
   return (
-    <Flag flagCode="us" />
+    <Flag flagCode="us"  height={25} />
   )
 }
 ```
@@ -30,7 +30,7 @@ const App = ()=> {
 
 <br>  
 
-## Optional properties
+## Component properties
 |Property|Typescript type|Description|
 |--------|:-------:|----------|
 |`flagCode`|flagCodeType|ISO-2 country codes.<br>Please note: Instead of `en` (which is invalid) use `us`,`gb` or `au`, depending on the flag, you want to see. The module will drop an error on console if invalid code is given. |
@@ -68,3 +68,16 @@ const App = ()=> {
   )
 }
 ```
+<br><br>
+
+>Written by: __Attila Kiss__, [e-LET Kft](https://e-let.hu), Hungary  ( GitHub: [kissato70](https://github.com/kissato70) )
+
+ > Licence:  MIT
+
+> Report issues [here](https://github.com/kissato70/national-flag-icons/issues).
+
+<br>  
+
+### Support the project >>> [Donation](https://bit.ly/kissato70_paypal_donate)  
+_Please support the further releases, if you like this component! **Thank you!**_  
+<br/>

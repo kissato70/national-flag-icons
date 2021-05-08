@@ -3,8 +3,16 @@
 	"version": "0.0.1",
 	"author": "kissato70",
 	"license": "MIT",
-	"repository": "",
-	"main": "lib/lib.js",
+	"repository": {
+		"type" : "git",
+		"url" : "https://github.com/kissato70/national-flag-icons.git"
+	},
+	"keywords": ["react", "typescript","flag","country","icon","language"],
+	"funding": "http://bit.ly/kissato70_paypal_donate",
+	"bugs": {
+			"url" : "https://github.com/kissato70/national-flag-icons/issues"
+	},
+	"main": "lib/flag.js",
 	"files": [
 		"lib/"
 	],
