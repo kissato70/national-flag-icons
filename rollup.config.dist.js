@@ -13,7 +13,7 @@ export default {
   input: "src/Library/flag.tsx",
   output: [
     {
-      file: "lib/lib.js",
+      file: "lib/flag.js",
       format: "es",
       plugins: [terser({ output: {comments: "false"} })],
       sourcemap: true

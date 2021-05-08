@@ -24,6 +24,7 @@
     "declarationDir": "types"
   },
   "include": [
+    "./src/react-app-env.d.ts",
     "./src/Library/"
   ]
 }
