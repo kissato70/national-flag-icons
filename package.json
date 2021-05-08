@@ -1,0 +1,67 @@
+{
+	"name": "national-flag-icons",
+	"version": "0.0.1",
+	"author": "kissato70",
+	"license": "MIT",
+	"repository": "",
+	"main": "lib/lib.js",
+	"files": [
+		"lib/"
+	],
+	"dependencies": {
+		"react": "^17.0.1",
+		"react-dom": "^17.0.1"
+	},
+	"scripts": {
+		"start": "yarn && node ./.bin/init.js",
+		"serve:react": "PORT=3330 PUBLIC_URL=/ react-scripts start",
+		"dist": "rollup -c rollup.config.dist.js",
+		"build": "rollup -c rollup.config.dev.js",
+		"serve": "rollup -c rollup.config.dev.js -w"
+	},
+	"eslintConfig": {
+		"extends": [
+			"react-app",
+			"react-app/jest"
+		]
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	},
+	"devDependencies": {
+		"@rollup/plugin-commonjs": "^17.1.0",
+		"@rollup/plugin-image": "^2.0.6",
+		"@rollup/plugin-json": "^4.1.0",
+		"@rollup/plugin-node-resolve": "^11.1.1",
+		"@rollup/plugin-replace": "^2.4.2",
+		"@types/node": "^12.0.0",
+		"@types/react": "^17.0.0",
+		"@types/react-dom": "^17.0.0",
+		"node-sass": "^5.0.0",
+		"postcss": "8.x",
+		"prompt-sync": "^4.2.0",
+		"react-scripts": "4.0.2",
+		"rollup": "^2.38.5",
+		"rollup-plugin-cleaner": "^1.0.0",
+		"rollup-plugin-copy": "^3.4.0",
+		"rollup-plugin-livereload": "^2.0.0",
+		"rollup-plugin-peer-deps-external": "^2.2.4",
+		"rollup-plugin-postcss": "^4.0.0",
+		"rollup-plugin-serve": "^1.1.0",
+		"rollup-plugin-typescript2": "^0.29.0",
+		"typescript": "^4.1.2"
+	},
+	"publishConfig": {
+		"access": "restricted",
+		"registry": "https://kekalma-909924862699.d.codeartifact.eu-central-1.amazonaws.com/npm/Kekalma/"
+	}
+}
