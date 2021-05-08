@@ -50,6 +50,12 @@ const App = ()=> {
 ### __<ins>Usable flag codes:</ins>__
 `ad`, `at`, `bh`, `by`, `cm`, `dj`, `et`, `ge`, `gs`, `id`, `jm`, `kw`, `lu`, `ml`, `mw`, `nl`, `ph`, `re`, `sh`, `sy`, `tn`, `uy`, `ye`, `ae`, `au`, `bi`, `bz`, `cn`, `dk`, `eu`, `gf`, `gt`, `ie`, `jo`, `ky`, `lv`, `mm`, `mx`, `no`, `pk`, `ro`, `si`, `sz`, `to`, `uz`, `yt`, `af`, `aw`, `bj`, `ca`, `co`, `dm`, `fi`, `gg`, `gu`, `il`, `jp`, `kz`, `ly`, `mn`, `my`, `np`, `pl`, `rs`, `sj`, `tc`, `tr`, `va`, `za`, `ag`, `ax`, `bm`, `cc`, `cr`, `do`, `fj`, `gh`, `gw`, `im`, `ke`, `la`, `ma`, `mo`, `mz`, `nr`, `pm`, `ru`, `sk`, `td`, `tt`, `vc`, `zm`, `ai`, `az`, `bn`, `cd`, `cs`, `dz`, `fk`, `gi`, `gy`, `in`, `kg`, `lb`, `mc`, `mp`, `na`, `nu`, `pn`, `rw`, `sl`, `tf`, `tv`, `ve`, `zw`, `al`, `ba`, `bo`, `cf`, `cu`, `ec`, `fm`, `gl`, `hk`, `io`, `kh`, `lc`, `md`, `mq`, `nc`, `nz`, `pr`, `sa`, `sm`, `tg`, `tw`, `vg`, `am`, `bb`, `br`, `cg`, `cv`, `ee`, `fo`, `gm`, `hm`, `iq`, `ki`, `li`, `me`, `mr`, `nc2`, `om`, `ps`, `sb`, `sn`, `th`, `tz`, `vi`, `an`, `bd`, `bs`, `ch`, `cx`, `eg`, `fr`, `gn`, `hn`, `ir`, `km`, `lk`, `mf`, `ms`, `ne`, `pa`, `pt`, `sc`, `so`, `tj`, `ua`, `vn`, `ao`, `be`, `bt`, `ci`, `cy`, `eh`, `ga`, `gp`, `hr`, `is`, `kn`, `lr`, `mg`, `mt`, `nf`, `pe`, `pw`, `sd`, `sr`, `tk`, `ug`, `vu`, `ar`, `bf`, `bv`, `ck`, `cz`, `er`, `gb`, `gq`, `ht`, `it`, `kp`, `ls`, `mh`, `mu`, `ng`, `pf`, `py`, `se`, `st`, `tl`, `um`, `wf`, `as`, `bg`, `bw`, `cl`, `de`, `es`, `gd`, `gr`, `hu`, `je`, `kr`, `lt`, `mk`, `mv`, `ni`, `pg`, `qa`, `sg`, `sv`, `tm`, `us`, `ws`
 
+<br>
+Example code:  
+
+```javascript
+<Flag flagCode="us" height={25}  className="myFlag" style={{ boxShadow: "2px 2px 1px #9E9E9E" }} />  
+```
 <br>  
 
 ## Other exported items
