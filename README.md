@@ -9,31 +9,43 @@ import Flag from 'national-flag-icons';
 
 const App = ()=> {
   return (
-    <Flag flagCode="us"  height={25} />
+    <Flag flagCode="us" height={25} />
   )
 }
+export default App;
 ```
 
 React with Typescript:
 ```javascript
 import React from 'react';
 import Flag from 'national-flag-icons';
+import type { flagCodeType } from 'national-flag-icons';
 
-const App = ()=> {
-  let flag = "us" as const;
+type myProps = {
+  language : string,
+  flag : string
+}
+
+const LanguageSelected = (props: myProps)=> {
+  let flagCode = props.flag  as flagCodeType;
   let sizeY : number = 30;
   return (
-    <Flag flagCode={flag} height={sizeY}/>
+    <>
+      <span>{props.language}</span>
+      <Flag flagCode={flagCode} height={sizeY}/>
+    </>
   )
 }
+export default LanguageSelected;
 ```
+_The above example shows, how to use the component, if the 'flagCode' parameter is coming as a string variable._
 
 <br>  
 
 ## Component properties
 |Property|Typescript type|Description|
 |--------|:-------:|----------|
-|`flagCode`|flagCodeType|ISO-2 country codes.<br>Please note: Instead of `en` (which is invalid) use `us`,`gb` or `au`, depending on the flag, you want to see. The module will drop an error on console if invalid code is given. |
+|`flagCode`|flagCodeType|String literal of ISO-2 country codes.<br>Please note: Instead of `en` (which is invalid) use `us`,`gb` or `au`, depending on the flag, you want to see. The module will drop an error on console if invalid code is given. |
 |`className`|string|(Optional) ClassName property, default value is `"languageFlag"`.|
 |`style`|| (Optional) Inline style properties.|
 |`height`|number| (Optional) The height in pixels. The flag will be scaled proportionaly. Default size is : 22 x 14 pixels. |
@@ -52,10 +64,9 @@ Example code:
 ## Other exported items
 |Item|Description|
 |---|----|
+|`flagArray`|String array of usable flagCodes, for input checking etc.|
 |`flagCodeType`|Type definition of string literals usable as flagCode.|
-|`flagArray`|String array of usable flagCodes.|
-|`flagProps`|type flagProps = \{ style?: CSSProperties, className? : string, height?: number } & flagCodeType
-|
+|`flagProps`| type flagProps = { flagCode : flagCodeType,  height?: number, style?: CSSProperties, className? : string}|
 
 
 <br>
@@ -66,7 +77,7 @@ The alternate component (`Flag2`) is returning a single div element, where the b
 
 ```javascript
 import React from 'react';
-import Flag2 from 'national-flag-icons';
+import {Flag2} from 'national-flag-icons';
 
 const App = ()=> {
   return (
